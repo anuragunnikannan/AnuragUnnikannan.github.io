@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="script.js"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="static/Logo.png" alt="logo" class="mylogo">
+            <h1>Anurag Unnikannan</h1>
+            <h3>Web/Software Developer</h3>
+        </div>
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About_Me">About Me</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#My_Projects">My Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="hamburger" class="fa fa-bars" onclick="dispHamburger()"></div>
+
+    <main>
+        <!-- Home section -->
+        <section class="main_section" id="Home">
+            <h3>Hi there!</h3>
+            <h1>I'm Anurag Unnikannan</h1>
+            <p>I am from Kerala, but living in Kolkata since 2002. I'm pursuing Computer Science from University of Engineering & Management, Kolkata and I'm aiming to get a job at one of the top companies in the world as a software developer. My hobbies are listening to music and watch Formula 1 race on weekends.</p>
+        </section>
+
+        <!-- About Me section -->
+        <section class="main_section" id="About_Me">
+            <h1>About Me</h1>
+            <!-- Some personal details -->
+            <div class="my_details">
+                <p>Name: <span class="textyellow">Anurag Unnikannan</span></p>
+                <p>Age: <span class="textyellow">19</span></p>
+                <p>Qualification: <span class="textyellow">B.Tech</span></p>
+                <p>Stream: <span class="textyellow">Computer Science</span></p>
+                <p>Languages Proficient in: <span class="textyellow">English, Hindi, Malayalam, Bengali</span></p>
+            </div>
+            <br>
+            <h3>Programming Languages</h3>
+            <!-- Programming Languages proficient in -->
+            <div class="prgs">
+                <div class="lang_grid">
+                    <div class="grid_item1">
+                        <img src="static/java.png" alt="java" class="lang_logo">
+                        <!-- <progress value="90" max="100"></progress> -->
+                        <div class="cont">
+                            <div class="skill" id="java"> </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid_item1">
+                        <img src="static/python.png" alt="python" class="lang_logo">
+                        <!-- <progress value="85" max="100"></progress> -->
+                        <div class="cont">
+                            <div class="skill" id="python"> </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid_item1">
+                        <img src="static/c_language.png" alt="c_language" class="lang_logo">
+                        <!-- <progress value="80" max="100"></progress> -->
+                        <div class="cont">
+                            <div class="skill" id="c"> </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid_item1">
+                        <img src="static/cpp.png" alt="c++" class="lang_logo">
+                        <!-- <progress value="70" max="100"></progress> -->
+                        <div class="cont">
+                            <div class="skill" id="cpp"> </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid_item1">
+                        <img src="static/javascript.png" alt="javascript" class="lang_logo">
+                        <!-- <progress value="60" max="100"></progress> -->
+                        <div class="cont">
+                            <div class="skill" id="js"> </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid_item1">
+                        <img src="static/html.png" alt="html" class="lang_logo">
+                        <!-- <progress value="85" max="100"></progress> -->
+                        <div class="cont">
+                            <div class="skill" id="html"> </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid_item1">
+                        <img src="static/css.png" alt="css" class="lang_logo">
+                        <!-- <progress value="75" max="100"></progress> -->
+                        <div class="cont">
+                            <div class="skill" id="css"> </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid_item1">
+                        <img src="static/sql.png" alt="sql" class="lang_logo">
+                        <!-- <progress value="75" max="100"></progress> -->
+                        <div class="cont">
+                            <div class="skill" id="sql"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn">
+                <button class="btn_style" id="download"><a href="#"><p>Download CV</p></a></button>
+            </div>
+            
+        </section>
+
+        <!-- Education section -->
+        <section class="main_section" id="Education">
+            <h1>My Education</h1>
+            <div class="item2">
+                <i class="fa fa-graduation-cap"></i>
+                <h4>2017</h4>
+                <p>Indian Certificate of Secondary Education (I.C.S.E) with 88% marks from The Assembly of God Church School, Tollygunj</p>
+            </div>
+            
+            <div class="item2">
+                <i class="fa fa-graduation-cap"></i>
+                <h4>2019</h4>
+                <p>Indian School Certificate (I.S.C) with 86% marks from The Assembly of God Church School, Tollygunj</p>
+            </div>
+
+            <div class="item2">
+                <i class="fa fa-graduation-cap"></i>
+                <h4>2019 - Present</h4>
+                <p>Pursuing B.Tech in Computer Science from University of Engineering & Management, Kolkata</p>
+                <p>CGPA: 9.39 upto 4th Semester</p>
+            </div>
+
+        </section>
+
+        <!-- My Projects section -->
+        <section class="main_section" id="My_Projects">
+            <h1>My Projects</h1>
+            <div class="projects_grid">
+
+                <!--Banking System-->
+                <a href="https://github.com/AnuragUnnikannan/PracticeCodes/blob/main/C_Programs/Banking_System.c" target="_blank" class="project">
+                    <img src="https://dengsolutions.com/deng_A478Erd/images/bank%20management.jpg" alt="Banking" class="project_image"><p class="project_title"><span class="code">&lt;</span> Banking System<span class="code">&#47;&gt</span></p>
+                </a>
+    
+                <!--Student Record Management System-->
+                <a href="https://github.com/AnuragUnnikannan/Student_Record_System/blob/main/Student1.java" target="_blank" class="project">
+                    <img src="static/login.png" alt="Student Record" class="project_image"><p class="project_title"><span class="code">&lt;</span>Student Record System<span class="code">&#47;&gt;</span></p>
+                </a>
+
+                <!-- Logic Gate Calculator -->
+                <a href="https://github.com/AnuragUnnikannan/PracticeCodes/blob/main/Python_Programs/Logic_Gate_Calculator.py" target="_blank" class="project">
+                    <img src="https://www.autodesk.com/products/eagle/blog/wp-content/uploads/2017/05/microchip-on-card.jpg" alt="Logic_Gate_Calculator"class="project_image"><p class="project_title"><span class="code">&lt;</span>Logic Gate Calculator<span class="code">&#47;&gt;</span></p>
+                </a>
+            </div>
+
+            <div class="btn">
+                <button class="btn_style" id="show"><a href="https://github.com/AnuragUnnikannan"><p>Show All</p></a></button>
+            </div>
+
+        </section>
+
+        <!-- Contact section -->
+        <section class="main_section" id="Contact">
+            <h1>Contact Me</h1>
+            <div class="contact_form">
+                <form>
+                    <!-- <label for="">Name</label> -->
+                    <!-- <br> -->
+                    <input type="text" name="fname" placeholder="Name">
+                    <!-- <br> -->
+                    <!-- <label for="">Email</label> -->
+                    <!-- <br> -->
+                    <input type="email" name="email" placeholder="Email">
+                    <!-- <br> -->
+                    <!-- <label for="">Project Name</label> -->
+                    <br>
+                    <input type="text" name="pname" placeholder="Project Name">
+                    <!-- <br> -->
+                    <!-- <label for="">Comment</label> -->
+                    <!-- <br> -->
+                    <textarea name="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <br>
+
+                    <div class="btn">
+                        <button class="btn_style" id="send"><a href="#"><p>Send</p></a></button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="contact_info">
+                <a href="#" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f9ca24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/AnuragUnnikannan" target="_blank" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f9ca24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>
+
+                <a href="https://twitter.com/AnuragU95" target="_blank" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f9ca24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+
+                <a href="#" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f9ca24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+                    </svg>
+                </a>
+                
+                <a href="#" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f9ca24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                </a>
+
+            </div>
+
+            
+        </section>
+    </main>
+</body>
+</html>
