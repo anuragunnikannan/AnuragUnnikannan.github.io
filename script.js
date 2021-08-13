@@ -9,7 +9,7 @@ function dispHamburger()
 
         for(var i = 0;i < y.length;i++)
         {
-            y[i].style.display.marginLeft("5rem");
+            y[i].classList.remove("blur_effect");
         }
     }
     else
@@ -18,10 +18,25 @@ function dispHamburger()
         x[0].style.left = "0";
         for(var i = 0;i < y.length;i++)
         {
-            y[i].style.display.marginLeft("38rem");
+            y[i].classList.add("blur_effect");
         }
-        /*x[0].style.opacity = "1"; */
-        /* x[0].style.boxShadow = "50rem 50rem 100rem black"; */
-        
+    }
+}
+
+window.addEventListener("resize", retain_header);
+
+function retain_header()
+{
+    var x = document.getElementsByTagName("header");
+    var y = window.outerWidth;
+    if(y > 980)
+    {
+        x[0].style.position = "fixed";
+        x[0].style.left = "0";
+    }
+    else
+    {
+        x[0].style.position = "absolute";
+        x[0].style.left = "-100rem";
     }
 }
