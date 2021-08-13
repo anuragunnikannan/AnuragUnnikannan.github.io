@@ -23,6 +23,22 @@ html{
     font-size: 62.5%;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 2rem;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--yellow); 
+    border-radius: 1rem;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #bd9a1d; 
+}
+
 body{
     font-size: 1.8rem;
     line-height: 1.5;
@@ -30,12 +46,14 @@ body{
     color: white;
     overflow-x: hidden;
     margin: 1rem;
+    position: absolute;
 }
 
 header{
     position: fixed;
     width: 35rem;
-    height: 100%;
+    height: 100vh;
+    z-index: 1000;
     top: 0;
     left: 0;
     background: #1a1a1a;
@@ -71,7 +89,7 @@ header{
     margin: auto;
     margin-top: -1rem;
     text-align: center;
-    width: 35rem;
+    width: 90%;
 }
 
 #navbar li{
@@ -99,7 +117,7 @@ header{
 
 #hamburger{
     position: fixed;
-    display: none;
+    display: block;
     /* visibility: hidden; */
     z-index:1000;
     top: 2rem;
@@ -114,10 +132,11 @@ header{
 section {
     min-height: 100vh;
     margin-left: 38rem;
-    justify-content: center;
+    /* justify-content: center; */
     /* text-align: justify; */
     padding: 1rem 4rem;
-    display: block;
+    /* display: block; */
+    position: relative;
     flex-direction: column;
 }
 
@@ -343,19 +362,19 @@ section {
 }
 
 form{
-    margin-left: 15rem;
-    margin-right: 15rem;
+    /* margin-left: 15rem;
+    margin-right: 15rem; */
+    /* margin: auto;
+    width: auto; */
+    text-align: center;
+    /* border: 1px solid red; */
 }
 
-/* label{
-    margin: 1rem;
-} */
-
 input{
-    width: 50rem;
+    width: 90%;
     height: 3rem;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 1%;
+    /* margin: 2%; */
     margin-bottom: 1.5rem;
     background: var(--grey);
     font-size: 1.5rem;
@@ -372,9 +391,9 @@ input:focus{
 textarea{
     margin: 1rem;
     margin-bottom: -2rem;
-    width: 50rem;
+    width: 90%;
     height: 10rem;
-    padding: 1rem;
+    padding: 1%;
     background: var(--grey);
     font-size: 1.5rem;
     color: white;
@@ -416,8 +435,10 @@ textarea:focus{
     }
 
     header{
-        display: block;
-        visibility: visible;
+        /* display: block;
+        visibility: visible; */
+        position: fixed;
+        left: 0;
     }
 
      section{
@@ -433,8 +454,10 @@ textarea:focus{
     }
 
     header{
-        display: none;
-        visibility: hidden;
+        /* display: none;
+        visibility: hidden; */
+        position: absolute;
+        left: -100rem;
     }
 
     #hamburger{
@@ -449,13 +472,24 @@ textarea:focus{
         left: 0%;
     } */
 
-    .projects_grid{
+    /* .projects_grid{
         display: grid;
         grid-template-columns: 15rem 15rem 15rem;
         column-gap: 20%;
-        /* width: 100%; */
-        /* margin: auto; */
+        width: 100%;
+        margin: auto;
         margin-left: 1rem;
+    } */
+
+    .projects_grid{
+        display: block;
+        padding: 1rem;
+    }
+
+    .project{
+        margin: auto;
+        display: block;
+        margin-bottom: 2rem;
     }
 
     body{
@@ -477,6 +511,14 @@ textarea:focus{
         /* justify-content: center;
         align-items: center; */
     }
+
+    header{
+        width: 60%;
+    }
+
+    /* #navbar a{
+        width: 60%;
+    } */
 
     /* .lang_logo{
         margin-left: 9rem;
