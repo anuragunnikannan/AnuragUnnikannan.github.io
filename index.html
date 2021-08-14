@@ -21,18 +21,18 @@
         <!-- Navigation Bar -->
         <nav id="navbar">
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About_Me">About Me</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#My_Projects">My Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a onclick="hideHeader()" href="#Home">Home</a></li>
+                <li><a onclick="hideHeader()" href="#About_Me">About Me</a></li>
+                <li><a onclick="hideHeader()" href="#Education">Education</a></li>
+                <li><a onclick="hideHeader()" href="#My_Projects">My Projects</a></li>
+                <li><a onclick="hideHeader()" href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div id="hamburger" class="fa fa-bars" onclick="dispHamburger()"></div>
+    <div id="hamburger" class="fa fa-bars" onclick="dispHeader()"></div>
 
-    <main>
+    <main onclick="hideHeader()">
         <!-- Home section -->
         <section class="main_section" id="Home">
             <h3>Hi there!</h3>
