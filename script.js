@@ -5,6 +5,7 @@ function showHeader()
     x[0].style.position = "fixed";
     x[0].style.left = "0";
     y[0].classList.add("blur_effect");
+    y[0].style.transition = "all 400ms ease-in-out";
 }
 
 function hideHeader()
@@ -21,7 +22,7 @@ function hideHeader()
 }
 
 /* For displaying/hiding header on clicking hamburger menu. For screens having width less than 980px */
-function dispHeader()
+function toggleHeader()
 {
     var x = document.getElementsByTagName("header");
 
