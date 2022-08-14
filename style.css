@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
 /* declaring variables for colors that will be used repeatedly */
 :root{
     --yellow: #f9ca24;
@@ -8,7 +9,7 @@
 }
 
 *{
-    font-family: 'Open Sans', 'Segoe UI', 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'IBM Plex Sans', 'Open Sans', 'Segoe UI', 'Arial', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
